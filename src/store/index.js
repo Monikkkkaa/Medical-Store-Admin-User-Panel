@@ -1,0 +1,16 @@
+import { configureStore } from '@reduxjs/toolkit';
+import authSlice from './slices/authSlice';
+import medicineSlice from './slices/medicineSlice';
+import cartSlice from './slices/cartSlice';
+import orderSlice from './slices/orderSlice';
+
+export const store = configureStore({
+  reducer: {
+    auth: authSlice,
+    medicines: medicineSlice,
+    cart: cartSlice,
+    orders: orderSlice,
+  },
+});
+
+export default store;
