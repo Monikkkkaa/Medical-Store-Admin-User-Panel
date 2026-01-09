@@ -93,7 +93,7 @@ const Orders = () => {
                     <div key={item._id} className="flex items-center space-x-3">
                       {item.medicine?.image && (
                         <img
-                          src={`http://localhost:5000/${item.medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
+                          src={`https://medical-store-admin-server.onrender.com/${item.medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
                           alt={item.name}
                           className="w-12 h-12 object-cover rounded"
                         />
@@ -120,7 +120,7 @@ const Orders = () => {
                   <p>{order.deliveryAddress.city}, {order.deliveryAddress.state}</p>
                   <p>{order.deliveryAddress.zipCode}</p>
                 </div>
-                
+
                 <div className="mt-4">
                   <p className="text-lg font-semibold text-gray-900">
                     Total: {formatCurrency(order.totalAmount)}
@@ -139,11 +139,10 @@ const Orders = () => {
               <button
                 key={page}
                 onClick={() => handlePageChange(page)}
-                className={`px-4 py-2 rounded-lg ${
-                  page === currentPage
+                className={`px-4 py-2 rounded-lg ${page === currentPage
                     ? 'bg-primary-500 text-white'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+                  }`}
               >
                 {page}
               </button>

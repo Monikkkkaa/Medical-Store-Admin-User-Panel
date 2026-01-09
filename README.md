@@ -44,7 +44,7 @@ A modern React.js user-facing application for the Medical Store with shopping ca
 3. **Environment Setup**
    - Update `.env` file if needed:
    ```env
-   REACT_APP_API_URL=http://localhost:5000/api
+   REACT_APP_API_URL=https://medical-store-admin-server.onrender.com/api
    PORT=3001
    ```
 

@@ -131,7 +131,7 @@ const Checkout = () => {
                 <div key={item.medicine._id} className="flex justify-between items-center">
                   <div className="flex items-center space-x-3">
                     <img
-                      src={item.medicine.image ? `http://localhost:5000/${item.medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}` : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yNCAxNlYzMk0xNiAyNEgzMiIgc3Ryb2tlPSIjOUNBM0FGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4='}
+                      src={item.medicine.image ? `https://medical-store-admin-server.onrender.com/${item.medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}` : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yNCAxNlYzMk0xNiAyNEgzMiIgc3Ryb2tlPSIjOUNBM0FGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4='}
                       alt={item.medicine.name}
                       className="w-12 h-12 object-cover rounded"
                       onError={(e) => {

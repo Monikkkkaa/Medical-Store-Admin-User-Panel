@@ -244,7 +244,7 @@ const Medicines = () => {
                     <Link to={`/medicine/${medicine._id}`}>
                       <div className="relative overflow-hidden rounded-2xl mb-6">
                         <img
-                          src={`http://localhost:5000/${medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
+                          src={`https://medical-store-admin-server.onrender.com/${medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
                           alt={medicine.name}
                           className={`object-cover transition-transform duration-500 group-hover:scale-110 ${
                             viewMode === 'list' ? 'w-full h-40' : 'w-full h-56'

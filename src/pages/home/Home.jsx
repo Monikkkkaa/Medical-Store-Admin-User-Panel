@@ -161,7 +161,7 @@ const Home = () => {
                   <div className="p-6">
                     <div className="relative mb-6 overflow-hidden rounded-xl">
                       <img
-                        src={`http://localhost:5000/${medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
+                        src={`https://medical-store-admin-server.onrender.com/${medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
                         alt={medicine.name}
                         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                       />

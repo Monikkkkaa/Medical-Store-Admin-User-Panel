@@ -21,7 +21,7 @@ const MedicineDetail = () => {
 
   const fetchMedicineDetail = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/public/medicines/${id}`);
+      const response = await fetch(`https://medical-store-admin-server.onrender.com/api/public/medicines/${id}`);
       const data = await response.json();
       if (data.success) {
         setMedicine(data.medicine);
@@ -86,7 +86,7 @@ const MedicineDetail = () => {
           <div className="animate-slideUp">
             <div className="card p-8">
               <img
-                src={medicine.image ? `http://localhost:5000/${medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}` : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yMDAgMTQwVjI2ME0xNDAgMjAwSDI2MCIgc3Ryb2tlPSIjOUNBM0FGIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4='}
+                src={medicine.image ? `https://medical-store-admin-server.onrender.com/${medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}` : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yMDAgMTQwVjI2ME0xNDAgMjAwSDI2MCIgc3Ryb2tlPSIjOUNBM0FGIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4='}
                 alt={medicine.name}
                 className="w-full h-96 object-cover rounded-xl"
                 onError={(e) => {

@@ -86,7 +86,7 @@ const OrderDetails = () => {
                 <div key={item._id} className="flex items-center space-x-4 p-4 border rounded-lg">
                   {item.medicine?.image && (
                     <img
-                      src={`http://localhost:5000/${item.medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
+                      src={`https://medical-store-admin-server.onrender.com/${item.medicine.image.replace('src\\', '').replace('src/', '').replace(/\\/g, '/')}`}
                       alt={item.name}
                       className="w-16 h-16 object-cover rounded-lg"
                     />
