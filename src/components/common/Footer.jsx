@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted partner in healthcare. We provide genuine medicines with fast delivery and excellent customer service.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">
                 <Facebook size={18} />
               </a>
@@ -31,7 +31,7 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
                 <Youtube size={18} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -108,15 +108,15 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="text-green-400" size={18} />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91-9988776655</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-purple-400" size={18} />
                 <span className="text-gray-300">support@medistore.com</span>
               </div>
             </div>
-            
-            <div className="mt-6">
+
+            {/* <div className="mt-6">
               <h4 className="font-semibold mb-3">Newsletter</h4>
               <div className="flex">
                 <input
@@ -128,7 +128,7 @@ const Footer = () => {
                   Subscribe
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
