@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast';
 import store from './store';
 import AppRoutes from './routes/AppRoutes';
 import Header from './components/common/Header';
+import Footer from './components/common/Footer';
 import { fetchCart } from './store/slices/cartSlice';
 import './assets/styles/global.css';
 
@@ -19,11 +20,12 @@ const AppContent = () => {
   }, [dispatch, isAuthenticated]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main>
+      <main className="flex-1">
         <AppRoutes />
       </main>
+      <Footer />
     </div>
   );
 };

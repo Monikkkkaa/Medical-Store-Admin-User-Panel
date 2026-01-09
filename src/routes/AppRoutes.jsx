@@ -4,6 +4,7 @@ import Home from '../pages/home/Home';
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
 import Medicines from '../pages/medicines/Medicines';
+import MedicineDetail from '../pages/medicines/MedicineDetail';
 import Cart from '../pages/cart/Cart';
 import Checkout from '../pages/orders/Checkout';
 import Orders from '../pages/orders/Orders';
@@ -16,6 +17,7 @@ const AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/medicines" element={<Medicines />} />
+      <Route path="/medicine/:id" element={<MedicineDetail />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/orders" element={<Orders />} />
